@@ -23,9 +23,9 @@ Silahkan setup project aplikasi kamu:
     - [x] Komponen Add to wishlist
   - [x] Halaman detail product
     - [x] Komponen Add to wishlist
-  - [ ] Halaman Wishlist
-    - [ ] Komponen list Wishlist (bisa menggunakan card yang sama dengan halaman list product)
-    - [ ] Komponen Remove Wishlist
+  - [x] Halaman Wishlist
+    - [x] Komponen list Wishlist (bisa menggunakan card yang sama dengan halaman list product)
+    - [x] Komponen Remove Wishlist
 
 ## W2D2
 
