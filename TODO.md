@@ -21,8 +21,8 @@ Silahkan setup project aplikasi kamu:
     - [x] Komponen Search
     - [x] Komponen Pagination
     - [x] Komponen Add to wishlist
-  - [ ] Halaman detail product
-    - [ ] Komponen Add to wishlist
+  - [x] Halaman detail product
+    - [x] Komponen Add to wishlist
   - [ ] Halaman Wishlist
     - [ ] Komponen list Wishlist (bisa menggunakan card yang sama dengan halaman list product)
     - [ ] Komponen Remove Wishlist
