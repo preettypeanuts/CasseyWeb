@@ -55,6 +55,13 @@
               src="https://images.unsplash.com/photo-1701453831008-ea11046da960?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D bg-fixed"
               alt="user photo"
             />
+            <button
+            data-collapse-toggle="navbar-user"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-user"
+            aria-expanded="true"
+          >
           </button>
           <!-- Dropdown menu -->
           <div
@@ -106,7 +113,7 @@
             type="button"
             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-user"
-            aria-expanded="false"
+            aria-expanded="true"
           >
             <span class="sr-only">Open main menu</span>
             <svg
@@ -168,13 +175,6 @@
 
     <div class="w-screen h-screen justify-center align-middle flex">
       <div class="relative">
-        <!-- <div
-          class="absolute z-50 top-1/2 "
-        >
-          <h1 class="flex text-[15vh] text-white font-black">Cassey</h1>
-        </div> -->
-        <!-- Your other components here -->
-
         <div class="w-[150vh] h-[40vh]">
           <!-- Tagline -->
           <div class="">
@@ -186,7 +186,7 @@
                   cassey
                 </h1>
                 <h6
-                  class="flex text-[2.2vh] font-thin text-gray-600 max-w-[50vh] right-8 mb-12 text-right"
+                  class="flex text-[2.2vh] font-thin text-gray-600 max-w-[50vh] right-8 mb-8 text-right"
                 >
                   Discover the Fusion of Fashion and Functionality with
                   Casetify, Crafting Tech Accessories That Elevate Your Style
@@ -195,39 +195,41 @@
                 <div class="flex justify-end">
                   <button
                     type="button"
-                    class="text-black bg-transparent border-gradient-to-br border from-green-400 to-blue-600 hover:bg-gradient-to-bl hover:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 font-extrabold"
+                    class="text-black bg-transparent border-gradient-to-br from-yellow-100 to-pink-500 hover:bg-gradient-to-bl hover:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-Montserrat font-semibold rounded-full text-sm px-5 py-2.5 text-center shadow-customShadow"
                   >
                     See Our Products
                   </button>
                 </div>
               </div>
-              <div class="flex flex-row overflow-auto scroll-smooth">
-                <div class="animate-scroll flex flex-row">
-                  <img
-                    src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
-                    alt=""
-                    class="w-[35vh] h-fit m-12"
-                  />
-                  <img
-                    src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
-                    alt=""
-                    class="w-[35vh] h-fit m-12"
-                  />
-                  <img
-                    src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
-                    alt=""
-                    class="w-[35vh] h-fit m-12"
-                  />
-                  <img
-                    src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
-                    alt=""
-                    class="w-[35vh] h-fit m-12"
-                  />
+              <div class="">
+                <div
+                  class="flex flex-row overflow-auto scroll-smooth bg-white shadow-customShadow rounded-[30px] ml-9 mt-9 mb-9"
+                >
+                  <div class="animate-scroll flex flex-row">
+                    <img
+                      src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
+                      alt=""
+                      class="w-[25vh] h-fit m-12"
+                    />
+                    <img
+                      src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
+                      alt=""
+                      class="w-[25vh] h-fit m-12"
+                    />
+                    <img
+                      src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
+                      alt=""
+                      class="w-[25vh] h-fit m-12"
+                    />
+                    <img
+                      src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
+                      alt=""
+                      class="w-[25vh] h-fit m-12"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div></div>
           </div>
 
           <div
@@ -237,7 +239,7 @@
           >
             <!-- Carousel wrapper -->
             <div
-              class="relative h-full overflow-hidden rounded-[30px] mb-[0vh]"
+              class="relative h-full overflow-hidden rounded-[30px] mb-[0vh] shadow-customShadow"
             >
               <!-- Item 1 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -325,6 +327,7 @@
         </div>
       </div>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
   </body>

@@ -19,6 +19,9 @@ module.exports = {
       animation: {
         scroll: 'scroll 15s linear infinite',
       },
+      boxShadow: {
+        customShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 25px 0px;',
+      },
     },
   },
   plugins: [
