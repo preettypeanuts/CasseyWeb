@@ -17,10 +17,10 @@
     />
   </head>
 
-  <body
-    class="bg-[url('https://images.unsplash.com/photo-1634502795504-f0f685b62d8e?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-fixed bg-cover font-Montserrat"
-  >
-    <nav class="bg-white/50 border-gray-200 dark:bg-gray-900 backdrop-blur-xl">
+  <body>
+    <nav
+      class="bg-white/50 border-gray-200 dark:bg-gray-900 backdrop-blur-xl w-full fixed top-0 z-50"
+    >
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3"
       >
@@ -58,7 +58,7 @@
           </button>
           <!-- Dropdown menu -->
           <div
-            class="-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+            class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
             id="user-dropdown"
           >
             <div class="px-4 py-3">
@@ -166,143 +166,164 @@
       </div>
     </nav>
 
-    <div id="default-carousel" class="relative w-full" data-carousel="slide">
-      <!-- Carousel wrapper -->
-      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="https://images.unsplash.com/photo-1617785899222-fe06b15b6dd5?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="https://images.unsplash.com/photo-1571599164516-bacd34e651f7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img
-            src="https://images.unsplash.com/photo-1605224307451-c86d7093f375?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
+    <div class="w-screen h-screen justify-center align-middle flex">
+      <div class="relative">
+        <!-- <div
+          class="absolute z-50 top-1/2 "
+        >
+          <h1 class="flex text-[15vh] text-white font-black">Cassey</h1>
+        </div> -->
+        <!-- Your other components here -->
+
+        <div class="w-[150vh] h-[40vh]">
+          <!-- Tagline -->
+          <div class="">
+            <div class="flex flex-row mt-16">
+              <div class="min-w-min flex-col items-center">
+                <h1
+                  class="flex text-[13vh] text-black font-black mt-[] font-serif"
+                >
+                  cassey
+                </h1>
+                <h6
+                  class="flex text-[2.2vh] font-thin text-gray-600 max-w-[50vh] right-8 mb-12 text-right"
+                >
+                  Discover the Fusion of Fashion and Functionality with
+                  Casetify, Crafting Tech Accessories That Elevate Your Style
+                  and Safeguard Your Devices
+                </h6>
+                <div class="flex justify-end">
+                  <button
+                    type="button"
+                    class="text-black bg-transparent border-gradient-to-br border from-green-400 to-blue-600 hover:bg-gradient-to-bl hover:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 font-extrabold"
+                  >
+                    See Our Products
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row overflow-auto scroll-smooth">
+                <div class="animate-scroll flex flex-row">
+                  <img
+                    src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
+                    alt=""
+                    class="w-[35vh] h-fit m-12"
+                  />
+                  <img
+                    src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
+                    alt=""
+                    class="w-[35vh] h-fit m-12"
+                  />
+                  <img
+                    src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
+                    alt=""
+                    class="w-[35vh] h-fit m-12"
+                  />
+                  <img
+                    src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
+                    alt=""
+                    class="w-[35vh] h-fit m-12"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div></div>
+          </div>
+
+          <div
+            id="default-carousel"
+            class="relative w-full h-full"
+            data-carousel="slide"
+          >
+            <!-- Carousel wrapper -->
+            <div
+              class="relative h-full overflow-hidden rounded-[30px] mb-[0vh]"
+            >
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="https://corporate.bestbuy.com/wp-content/uploads/2023/09/Casetify-blog-image.jpg"
+                  class="brightness-100 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="https://media.wonderlandmagazine.com/uploads/2022/06/L1660825-scaled.jpg"
+                  class="brightness-100 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="https://thepopinsider.com/wp-content/uploads/sites/6/2022/03/Casetify_PokemonXCasetifyCollection.jpg"
+                  class="brightness-100 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="https://www.billboard.com/wp-content/uploads/2022/02/Casetify-x-SpongeBob-collection.jpg?w=942&h=623&crop=1"
+                  class="brightness-100 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 5 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="https://thepopinsider.com/wp-content/uploads/sites/6/2023/05/Casetify_PowerPuffGirlsFeatured.jpg"
+                  class="brightness-100 absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <!-- Slider indicators -->
+            <div
+              class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+            >
+              <button
+                type="button"
+                class="w-2 h-2 rounded-full"
+                aria-current="true"
+                aria-label="Slide 1"
+                data-carousel-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                class="w-2 h-2 rounded-full"
+                aria-current="false"
+                aria-label="Slide 2"
+                data-carousel-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                class="w-2 h-2 rounded-full"
+                aria-current="false"
+                aria-label="Slide 3"
+                data-carousel-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                class="w-2 h-2 rounded-full"
+                aria-current="false"
+                aria-label="Slide 4"
+                data-carousel-slide-to="3"
+              ></button>
+              <button
+                type="button"
+                class="w-2 h-2 rounded-full"
+                aria-current="false"
+                aria-label="Slide 5"
+                data-carousel-slide-to="4"
+              ></button>
+            </div>
+            <!-- Slider controls -->
+          </div>
         </div>
       </div>
-      <!-- Slider indicators -->
-      <div
-        class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
-      >
-        <button
-          type="button"
-          class="w-3 h-3 rounded-full"
-          aria-current="true"
-          aria-label="Slide 1"
-          data-carousel-slide-to="0"
-        ></button>
-        <button
-          type="button"
-          class="w-3 h-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 2"
-          data-carousel-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          class="w-3 h-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 3"
-          data-carousel-slide-to="2"
-        ></button>
-        <button
-          type="button"
-          class="w-3 h-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 4"
-          data-carousel-slide-to="3"
-        ></button>
-        <button
-          type="button"
-          class="w-3 h-3 rounded-full"
-          aria-current="false"
-          aria-label="Slide 5"
-          data-carousel-slide-to="4"
-        ></button>
-      </div>
-      <!-- Slider controls -->
-      <button
-        type="button"
-        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev
-      >
-        <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg
-            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 1 1 5l4 4"
-            />
-          </svg>
-          <span class="sr-only">Previous</span>
-        </span>
-      </button>
-      <button
-        type="button"
-        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next
-      >
-        <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg
-            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 9 4-4-4-4"
-            />
-          </svg>
-          <span class="sr-only">Next</span>
-        </span>
-      </button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
