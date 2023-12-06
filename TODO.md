@@ -38,17 +38,17 @@ Silahkan setup project aplikasi kamu:
   - [x] Halaman home: /
     - [x] Komponen Banner
     - [x] Komponen Detail info Ecommerce
-    - [ ] Komponen Featured Product (5-10 product) + “see-all”
-  - [ ] Halaman product: /products
-    - [ ] Komponen List Product
-    - [ ] Komponen Search
-    - [ ] Komponent Pagination
-    - [ ] Komponen Add to wishlist
-  - [ ] Halaman detail product: /products/:slug
-    - [ ] Komponen Add to wishlist
-  - [ ] Halaman wishlist: /wishlist
-    - [ ] Komponen List Wishlist (bisa menggunakan card yang sama dengan halaman list product)
-    - [ ] Komponen Remove Wishlist
+    - [x] Komponen Featured Product (5-10 product) + “see-all”
+  - [x] Halaman product: /products
+    - [x] Komponen List Product
+    - [x] Komponen Search
+    - [x] Komponent Pagination
+    - [x] Komponen Add to wishlist
+  - [x] Halaman detail product: /products/:slug
+    - [x] Komponen Add to wishlist
+  - [x] Halaman wishlist: /wishlist
+    - [x] Komponen List Wishlist (bisa menggunakan card yang sama dengan halaman list product)
+    - [x] Komponen Remove Wishlist
 
 > Catatan: Kamu bisa menambahkan halaman sesuai kebutuhan aplikasi kamu
 
@@ -56,19 +56,19 @@ Silahkan setup project aplikasi kamu:
 
 Implementasikan CSR dan SSR pada pada halaman-halaman dan komponen-komponen yang sudah dibuat dengan detail sebagai berikut:
 
-- [ ] Halaman register: /register
-- [ ] Halaman login: /login
-- [ ] Halaman home: / (SSR)
-- [ ] Halaman product: /products (CSR)
-  - [ ] Komponen List Product (CSR)
-  - [ ] Komponen Search (CSR)
-  - [ ] Komponen Pagination (CSR)
-  - [ ] Komponen Add to Wishlist (CSR)
+- [x] Halaman register: /register
+- [x] Halaman login: /login
+- [x] Halaman home: / (SSR)
+- [x] Halaman product: /products (CSR)
+  - [x] Komponen List Product (CSR)
+  - [x] Komponen Search (CSR)
+  - [x] Komponen Pagination (CSR)
+  - [x] Komponen Add to Wishlist (CSR)
 - [ ] Halaman detail product: /products/:slug (SSR)
-  - [ ] Komponen Add to Wishlist (CSR)
-- [ ] Halaman wishlist: /wishlist
-  - [ ] Komponen List Wishlist (CSR)
-  - [ ] Komponen Remove Wishlist (CSR)
+  - [x] Komponen Add to Wishlist (CSR)
+- [x] Halaman wishlist: /wishlist
+  - [x] Komponen List Wishlist (CSR)
+  - [x] Komponen Remove Wishlist (CSR)
 
 > Catatan: Disini belum perlu melakukan fetching atau request data
 

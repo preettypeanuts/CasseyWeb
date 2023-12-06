@@ -1,3 +1,6 @@
+'use client'
+import { WishListBtn } from "./WishListBtn"
+
 export const DetailProduct = () => {
     return (
         <>
@@ -38,7 +41,7 @@ export const DetailProduct = () => {
                                         id="countries"
                                         className="bg-transparent border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     >
-                                        <option selected="">iPhone 15 Promax</option>
+                                        <option selected>iPhone 15 Promax</option>
                                         <option value="US">iPhone 14 Promax</option>
                                         <option value="CA">iPhone 13 Promax</option>
                                         <option value="FR">iPhone 12 Promax</option>
@@ -58,13 +61,14 @@ export const DetailProduct = () => {
                                     <i className="bx bx-cart-add" />
                                     Add to cart
                                 </a>
-                                <button
+                                <WishListBtn/>
+                                {/* <button
                                     href="#"
                                     className="mt-2 mr-4 text-center text-black border-2 border-gradient-to-br border-gradient-to-br from-yellow-100 to-pink-500 hover:bg-gradient-to-bl hover:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-Montserrat font-semibold rounded-full text-sm px-5 py-2.5"
                                 >
                                     <i className="bx bx-heart " />
                                     Add to Wishlist
-                                </button>
+                                </button> */}
                             </div>
                         </div>
                     </div>

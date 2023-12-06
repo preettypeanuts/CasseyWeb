@@ -1,7 +1,11 @@
+'use client'
 import { ReactNode } from "react"
 import { FiUser, FiSearch, FiShoppingBag } from "react-icons/fi";
+import { usePathname } from 'next/navigation'
 
 export const Navbar = ({ children }: { children: ReactNode }) => {
+  const pathName = usePathname()
+  // 
   return (
     <>
       <nav className="bg-white/50 font-Montserrat border-gray-200 dark:bg-gray-900 backdrop-blur-xl w-full fixed top-0 z-50">
@@ -15,7 +19,7 @@ export const Navbar = ({ children }: { children: ReactNode }) => {
               class="h-8"
               alt="Flowbite Logo"
               /> */}
-            <span className="self-center text-xl font-thin whitespace-nowrap dark:text-white">
+            <span className="self-center text-xl font-regular whitespace-nowrap dark:text-white">
               cassey
             </span>
           </a>
@@ -120,8 +124,16 @@ export const Navbar = ({ children }: { children: ReactNode }) => {
             <ul className="flex flex-col font-normal p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <a
+                  href="/"
+                  className={`${pathName === '/' ? 'text-blue-500' : ''} block font-thin py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700`}
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
                   href="/products"
-                  className="block font-thin py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className={`${pathName === '/products' ? 'text-blue-500' : ''} block font-thin py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700`}
                 >
                   Devices
                 </a>
@@ -129,7 +141,7 @@ export const Navbar = ({ children }: { children: ReactNode }) => {
               <li>
                 <a
                   href="/wishlists"
-                  className="block font-thin py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className={`${pathName === '/wishlists' ? 'text-blue-500' : ''} block font-thin py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700`}
                 >
                   Wishlists
                 </a>
@@ -137,7 +149,7 @@ export const Navbar = ({ children }: { children: ReactNode }) => {
               <li>
                 <a
                   href="/login"
-                  className="block font-thin py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className={`${pathName === '/login' ? 'text-blue-500' : ''} block font-thin py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700`}
                 >
                   Login
                 </a>
@@ -145,7 +157,7 @@ export const Navbar = ({ children }: { children: ReactNode }) => {
               <li>
                 <a
                   href="/register"
-                  className="block font-thin py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className={`${pathName === '/register' ? 'text-blue-500' : ''} block font-thin py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700`}
                 >
                   Cassey Club!
                 </a>

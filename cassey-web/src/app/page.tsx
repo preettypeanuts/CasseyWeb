@@ -10,7 +10,6 @@ export default function Home() {
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></Script>
       <Navbar>
         <Banner />
-        <InfoEcommerce />
         <CardHome/>
       </Navbar>
     </>
