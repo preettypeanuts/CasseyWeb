@@ -1,3 +1,4 @@
+import { RunningImage } from "./RunningImage"
 import { InfoEcommerce } from "./InfoEcommerce"
 
 export const Banner = () => {
@@ -19,44 +20,19 @@ export const Banner = () => {
                                         Your Devices
                                     </h6>
                                     <div className="flex justify-end">
-                                        <button
+                                        <a
+                                            href="#list"
                                             type="button"
                                             className="text-black bg-transparent border-gradient-to-br from-yellow-100 to-pink-500 hover:bg-gradient-to-bl hover:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-Montserrat font-semibold rounded-full text-sm px-5 py-2.5 text-center shadow-customShadow"
                                         >
                                             See Our Products
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
-                                <div className="">
-                                    <div className="flex flex-row overflow-auto scroll-smooth bg-white shadow-customShadow rounded-[30px] ml-9 mt-9 mb-9">
-                                        <div className="animate-scroll flex flex-row">
-                                            {/* eslint-disable-next-line */}
-                                            <img
-                                                src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
-                                                alt=""
-                                                className="w-[25vh] h-fit m-12"
-                                            />
-                                            <img
-                                                src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
-                                                alt=""
-                                                className="w-[25vh] h-fit m-12"
-                                            />
-                                            <img
-                                                src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
-                                                alt=""
-                                                className="w-[25vh] h-fit m-12"
-                                            />
-                                            <img
-                                                src="https://cdn-image02.casetify.com/usr/16571/16546571/~v411/30295856x2_iphone-14-pro-max__color_white_16005227.png.1000x1000-w.m80.webp"
-                                                alt=""
-                                                className="w-[25vh] h-fit m-12"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
+                              <RunningImage/>
                             </div>
                         </div>
-                       <InfoEcommerce/>
+                        <InfoEcommerce />
                     </div>
                 </div>
             </div>

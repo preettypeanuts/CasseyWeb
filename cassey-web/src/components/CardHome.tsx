@@ -1,7 +1,7 @@
 export const CardHome = () => {
     return (
         <>
-            <div className="justify-center align-middle flex">
+            <div  id="list" className="justify-center align-middle flex">
                 <p className="flex text-[6vh] text-black font-black font-serif mt-20">
                     Our Cases Collections
                 </p>
