@@ -18,7 +18,6 @@ export default function RootLayout({
     <html lang="en" className='scroll-smooth'>
       <head>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet"></link>
-
       </head>
       <body className={inter.className}>{children}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js" async/>   
