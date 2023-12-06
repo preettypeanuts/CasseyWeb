@@ -218,16 +218,67 @@
             "slug": "i-wanna-win-lottery",
             "description": "This case features a beautiful Lotery design that will add a touch of elegance to your phone.",
             "price": 85.00,
-            "excerpt": "Bounce Case MagSafe Compatible",
+            "excerpt": "Impact Ring Stand Case MagSafe Compatible",
             "tags": [
                 "elegant",
                 "lucky",
                 "lootery",
                 "doodles"
             ],
-            "thumbnail": "https://cdn-image02.casetify.com/usr/24819/1524819/~v6082/20224764_iphone-15-pro-max__color_natural-titanium_16005993.png.350x350-w.m80.webp",
+            "thumbnail": "https://cdn-image02.casetify.com/usr/14315/17384315/~v582/28785452_iphone-15-pro-max__color_natural-titanium_16005988.png.350x350-w.m80.webp",
             "images": [
-                "https://cdn-image02.casetify.com/usr/24819/1524819/~v6082/20224764_iphone-15-pro-max__color_natural-titanium_16005993.png.350x350-w.m80.webp"
+                "https://cdn-image02.casetify.com/usr/14315/17384315/~v582/28785452_iphone-15-pro-max__color_natural-titanium_16005988.png.350x350-w.m80.webp"
+            ]
+        },
+        {
+            "name": "Happy Daisies",
+            "slug": "happy-daisies",
+            "description": "This case features a beautiful Daisies design that will add a touch of elegance to your phone.",
+            "price": 85.00,
+            "excerpt": "Impact Case MagSafe Compatible",
+            "tags": [
+                "elegant",
+                "lucky",
+                "daisies",
+                "flower"
+            ],
+            "thumbnail": "https://cdn-image02.casetify.com/usr/9643/22929643/~v681/26668116_iphone-15-pro-max__color_natural-titanium_16006196.png.350x350-w.m80.webp",
+            "images": [
+                "https://cdn-image02.casetify.com/usr/9643/22929643/~v681/26668116_iphone-15-pro-max__color_natural-titanium_16006196.png.350x350-w.m80.webp"
+            ]
+        },
+        {
+            "name": "Normal Leonarudo pattern",
+            "slug": "normal-leonarudo-pattern",
+            "description": "This case features a beautiful Leonarudo pattern design that will add a touch of elegance to your phone.",
+            "price": 85.00,
+            "excerpt": "Impact Case",
+            "tags": [
+                "pattern",
+                "lucky",
+                "daisies",
+                "leunardo"
+            ],
+            "thumbnail": "https://cdn-image02.casetify.com/usr/18624/34638624/~v181/29610341_iphone-15-pro-max__color_natural-titanium_16005971.png.350x350-w.m80.webp",
+            "images": [
+                "https://cdn-image02.casetify.com/usr/18624/34638624/~v181/29610341_iphone-15-pro-max__color_natural-titanium_16005971.png.350x350-w.m80.webp"
+            ]
+        },
+        {
+            "name": "Daisy by Katie-s Collective",
+            "slug": "daisy-by-aties-collective",
+            "description": "This case features a beautiful Daisy by Katie-s Collective design that will add a touch of elegance to your phone.",
+            "price": 75.00,
+            "excerpt": "Clear Case MagSafe Compatible",
+            "tags": [
+                "pattern",
+                "lucky",
+                "daisies",
+                "leunardo"
+            ],
+            "thumbnail": "https://cdn-image02.casetify.com/usr/8405/29948405/~v881/27729581_iphone-15-pro-max__color_natural-titanium_16006058.png.350x350-w.m80.webp",
+            "images": [
+                "https://cdn-image02.casetify.com/usr/8405/29948405/~v881/27729581_iphone-15-pro-max__color_natural-titanium_16006058.png.350x350-w.m80.webp"
             ]
         },
     ]
