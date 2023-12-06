@@ -1,20 +1,21 @@
 import { ReactNode } from "react"
-
+import { IoCartOutline, IoSearch } from "react-icons/io5";
+import { FiUser, FiSearch, FiShoppingBag } from "react-icons/fi";
 export const Navbar = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      <nav className="bg-white/50 border-gray-200 dark:bg-gray-900 backdrop-blur-xl w-full fixed top-0 z-50">
+      <nav className="bg-white/50 font-Montserrat border-gray-200 dark:bg-gray-900 backdrop-blur-xl w-full fixed top-0 z-50">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
           <a
-            href="https://flowbite.com/"
+            href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-              {/* <img
+            {/* <img
               src="https://flowbite.com/docs/images/logo.svg"
               class="h-8"
               alt="Flowbite Logo"
               /> */}
-            <span className="self-center text-xl font-bold whitespace-nowrap dark:text-white">
+            <span className="self-center text-xl font-thin whitespace-nowrap dark:text-white">
               cassey
             </span>
           </a>
@@ -22,20 +23,21 @@ export const Navbar = ({ children }: { children: ReactNode }) => {
             <div className="flex justify-around w-[15vh]">
               <button
                 type="button"
-                className="flex "
+                className="flex w-6 h-6"
                 id="user-menu-button"
                 aria-expanded="false"
                 data-dropdown-toggle="user-dropdown"
                 data-dropdown-placement="bottom"
               >
+                <FiUser className="w-full h-full" />
                 <span className="sr-only">Open user menu</span>
                 <i className="bx bx-user bx-sm" />
               </button>
-              <button className="">
-                <i className="bx bx-shopping-bag bx-sm" />
+              <button className="w-6 h-6"> {/* Mengatur ukuran tombol */}
+                <FiShoppingBag className="w-full h-full" /> {/* Mengatur ukuran ikon */}
               </button>
-              <button className="">
-                <i className="bx bx-search bx-sm" />
+              <button className="w-6 h-6"> {/* Mengatur ukuran tombol */}
+                <FiSearch className="w-full h-full" /> {/* Mengatur ukuran ikon */}
               </button>
             </div>
             {/* Dropdown menu */}
@@ -44,28 +46,28 @@ export const Navbar = ({ children }: { children: ReactNode }) => {
               id="user-dropdown"
             >
               <div className="px-4 py-3">
-                <span className="block text-sm text-gray-900 dark:text-white">
+                <span className="block font-thin text-sm text-gray-900 dark:text-white">
                   Bonnie Green
                 </span>
-                <span className="block text-sm text-gray-500 truncate dark:text-gray-400">
+                <span className="block font-thin text-sm text-gray-500 truncate dark:text-gray-400">
                   name@flowbite.com
                 </span>
               </div>
               <ul className="py-2" aria-labelledby="user-menu-button">
                 <li>
                   <a
-                    href="#"
+                    href="/login"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >
-                    Dashboard
+                    Login
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/register"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >
-                    Settings
+                    Register
                   </a>
                 </li>
                 <li>
@@ -118,34 +120,34 @@ export const Navbar = ({ children }: { children: ReactNode }) => {
             <ul className="flex flex-col font-normal p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  href="/list-products"
+                  className="block font-thin py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Devices
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  href="/wishlists"
+                  className="block font-thin py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  Design
+                  Wishlists
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  href="/login"
+                  className="block font-thin py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  Collections
+                  Login
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  href="/register"
+                  className="block font-thin py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  Contact
+                  Cassey Club!
                 </a>
               </li>
             </ul>
