@@ -2,19 +2,36 @@
     "casetify": [
         {
             "name": "Cherry Blossom",
-            "slug": "",
+            "slug": "cherry-blossom",
             "description": "This case features a beautiful cherry blossom design that will add a touch of elegance to your phone.",
-            "price": 0,
-            "excerpt": "",
+            "price": 85,
+            "excerpt": "Impact Ring Stand Case MagSafe Compatible",
             "tags": [
                 "elegant",
                 "cherry blossom",
                 "pink",
                 "white"
             ],
-            "thumbnail": "https://images.casetify.com/products/iphone/11/cherry-blossom-pink-white-clear-case.jpg",
+            "thumbnail": "https://cdn-image02.casetify.com/usr/29073/1469073/~v6682/15349384_iphone-15-pro-max__color_natural-titanium_16005988.png.350x350-w.m80.webp",
             "images": [
-                "https://images.casetify.com/products/iphone/11/cherry-blossom-pink-white-clear-case.jpg"
+                "https://cdn-image02.casetify.com/usr/29073/1469073/~v6682/15349384_iphone-15-pro-max__color_natural-titanium_16005988.png.350x350-w.m80.webp"
+            ]
+        },
+        {
+            "name": "Yoshino Cherry Blossoms",
+            "slug": "yoshino-cherry-blossoms",
+            "description": "This case features a beautiful Yoshino Cherry Blossoms design that will add a touch of elegance to your phone.",
+            "price": 85,
+            "excerpt": "Impact Ring Stand Case MagSafe Compatible",
+            "tags": [
+                "elegant",
+                "yoshino cherry blossom",
+                "pink",
+                "white"
+            ],
+            "thumbnail": "https://cdn-image02.casetify.com/usr/29073/1469073/~v10881/2651224_iphone-15-pro-max__color_natural-titanium_16005970.png.350x350-w.m80.webp",
+            "images": [
+                "https://cdn-image02.casetify.com/usr/29073/1469073/~v10881/2651224_iphone-15-pro-max__color_natural-titanium_16005970.png.350x350-w.m80.webp"
             ]
         },
         {
@@ -279,6 +296,91 @@
             "thumbnail": "https://cdn-image02.casetify.com/usr/8405/29948405/~v881/27729581_iphone-15-pro-max__color_natural-titanium_16006058.png.350x350-w.m80.webp",
             "images": [
                 "https://cdn-image02.casetify.com/usr/8405/29948405/~v881/27729581_iphone-15-pro-max__color_natural-titanium_16006058.png.350x350-w.m80.webp"
+            ]
+        },
+        {
+            "name": "Custom Phone Case",
+            "slug": "custom-phone-case",
+            "description": "This case features a beautiful Custom Phone Case design that will add a touch of elegance to your phone.",
+            "price": 70.00,
+            "excerpt": "Clear Case MagSafe Compatible",
+            "tags": [
+                "pattern",
+                "lucky",
+                "diy",
+                "custom"
+            ],
+            "thumbnail": "https://cdn-image02.casetify.com/usr/4787/34787/~v1681/12692439_iphone-15-pro-max__color_natural-titanium_16006058.png.350x350-w.m80.webp",
+            "images": [
+                "https://cdn-image02.casetify.com/usr/4787/34787/~v1681/12692439_iphone-15-pro-max__color_natural-titanium_16006058.png.350x350-w.m80.webp"
+            ]
+        },
+        {
+            "name": "ONE PIECE Gear 5 Motif Case",
+            "slug": "one-piece-gear-5-motif-case",
+            "description": "This case features a beautiful ONE PIECE Gear 5 Motif Case design that will add a touch of elegance to your phone.",
+            "price": 70.00,
+            "excerpt": "Impact Ring Stand Case MagSafe Compatible",
+            "tags": [
+                "one piece",
+                "anime",
+                "gear",
+                "custom"
+            ],
+            "thumbnail": "https://cdn-image02.casetify.com/usr/4787/34787/~v182/31084239_iphone-15-pro-max__color_natural-titanium_16005988.png.350x350-w.m80.webp",
+            "images": [
+                "https://cdn-image02.casetify.com/usr/4787/34787/~v182/31084239_iphone-15-pro-max__color_natural-titanium_16005988.png.350x350-w.m80.webp"
+            ]
+        },
+        {
+            "name": "The Black Case",
+            "slug": "The Black Case",
+            "description": "This case features a beautiful The Black Case design that will add a touch of elegance to your phone.",
+            "price": 55.00,
+            "excerpt": "Ultra Bounce Case MagSafe Compatible",
+            "tags": [
+                "black",
+                "solid",
+                "elegant",
+                "premoum"
+            ],
+            "thumbnail": "https://cdn-stamplib.casetify.com/cms/image/21797c53aaf90780afed406a45d71c5f.jpg",
+            "images": [
+                "https://cdn-stamplib.casetify.com/cms/image/21797c53aaf90780afed406a45d71c5f.jpg"
+            ]
+        },
+        {
+            "name": "cup noodles by sad potato club",
+            "slug": "cup-noodles-by-sad-potato-club",
+            "description": "This case features a beautiful cup noodles by sad potato club design that will add a touch of elegance to your phone.",
+            "price": 95.00,
+            "excerpt": "Bounce Case MagSafe Compatible",
+            "tags": [
+                "potato",
+                "noodles",
+                "elegant",
+                "premium"
+            ],
+            "thumbnail": "https://cdn-image02.casetify.com/usr/3612/28293612/~v182/26071706_iphone-15-pro-max__color_natural-titanium_16005994.png.350x350-w.m80.webp",
+            "images": [
+                "https://cdn-image02.casetify.com/usr/3612/28293612/~v182/26071706_iphone-15-pro-max__color_natural-titanium_16005994.png.350x350-w.m80.webp"
+            ]
+        },
+        {
+            "name": "I'm so busy",
+            "slug": "im-so-busy",
+            "description": "This case features a beautiful I'm so busy design that will add a touch of elegance to your phone.",
+            "price": 95.00,
+            "excerpt": "Impact Ring Stand Case MagSafe Compatible",
+            "tags": [
+                "potato",
+                "noodles",
+                "elegant",
+                "premium"
+            ],
+            "thumbnail": "https://cdn-image02.casetify.com/usr/14315/17384315/~v6482/25898647_iphone-15-pro-max__color_natural-titanium_16005988.png.350x350-w.m80.webp",
+            "images": [
+                "https://cdn-image02.casetify.com/usr/14315/17384315/~v6482/25898647_iphone-15-pro-max__color_natural-titanium_16005988.png.350x350-w.m80.webp"
             ]
         },
     ]
