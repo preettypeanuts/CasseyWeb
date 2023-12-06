@@ -1,0 +1,234 @@
+{
+    "casetify": [
+        {
+            "name": "Cherry Blossom",
+            "slug": "",
+            "description": "This case features a beautiful cherry blossom design that will add a touch of elegance to your phone.",
+            "price": 0,
+            "excerpt": "",
+            "tags": [
+                "elegant",
+                "cherry blossom",
+                "pink",
+                "white"
+            ],
+            "thumbnail": "https://images.casetify.com/products/iphone/11/cherry-blossom-pink-white-clear-case.jpg",
+            "images": [
+                "https://images.casetify.com/products/iphone/11/cherry-blossom-pink-white-clear-case.jpg"
+            ]
+        },
+        {
+            "name": "Marble",
+            "slug": "",
+            "description": "This case features a beautiful marble design that will add a touch of sophistication to your phone.",
+            "price": 0,
+            "excerpt": "",
+            "tags": [
+                "sophisticated",
+                "marble",
+                "black",
+                "white"
+            ],
+            "thumbnail": "https://images.casetify.com/products/iphone/11/marble-black-white-clear-case.jpg",
+            "images": [
+                "https://images.casetify.com/products/iphone/11/marble-black-white-clear-case.jpg"
+            ]
+        },
+        {
+            "name": "Tropical Leaves",
+            "slug": "",
+            "description": "This case features a beautiful tropical leaves design that will add a touch of vibrancy to your phone.",
+            "price": 0,
+            "excerpt": "",
+            "tags": [
+                "vibrant",
+                "tropical leaves",
+                "green"
+            ],
+            "thumbnail": "https://images.casetify.com/products/iphone/11/tropical-leaves-green-clear-case.jpg",
+            "images": [
+                "https://images.casetify.com/products/iphone/11/tropical-leaves-green-clear-case.jpg"
+            ]
+        },
+        {
+            "name": "Abstract",
+            "slug": "",
+            "description": "This case features a beautiful abstract design that will add a touch of modernity to your phone.",
+            "price": 0,
+            "excerpt": "",
+            "tags": [
+                "modern",
+                "abstract",
+                "black"
+            ],
+            "thumbnail": "https://images.casetify.com/products/iphone/11/abstract-black-clear-case.jpg",
+            "images": [
+                "https://images.casetify.com/products/iphone/11/abstract-black-clear-case.jpg"
+            ]
+        },
+        {
+            "name": "Cactus",
+            "slug": "",
+            "description": "This case features a beautiful cactus design that will add a touch of fun to your phone.",
+            "price": 0,
+            "excerpt": "",
+            "tags": [
+                "fun",
+                "cactus",
+                "green"
+            ],
+            "thumbnail": "https://images.casetify.com/products/iphone/11/cactus-green-clear-case.jpg",
+            "images": [
+                "https://images.casetify.com/products/iphone/11/cactus-green-clear-case.jpg"
+            ]
+        },
+        {
+            "name": "Starry Night",
+            "slug": "",
+            "description": "This case features a beautiful starry night design that will add a touch of mystery to your phone.",
+            "price": 0,
+            "excerpt": "",
+            "tags": [
+                "mysterious",
+                "starry night",
+                "blue"
+            ],
+            "thumbnail": "https://images.casetify.com/products/iphone/11/starry-night-blue-clear-case.jpg",
+            "images": [
+                "https://images.casetify.com/products/iphone/11/starry-night-blue-clear-case.jpg"
+            ]
+        },
+        {
+            "name": "Galaxy",
+            "slug": "",
+            "description": "This case features a beautiful galaxy design that will add a touch of wonder to your phone.",
+            "price": 0,
+            "excerpt": "",
+            "tags": [
+                "wonderful",
+                "galaxy",
+                "purple"
+            ],
+            "thumbnail": "https://images.casetify.com/products/iphone/11/galaxy-purple-clear-case.jpg",
+            "images": [
+                "https://images.casetify.com/products/iphone/11/galaxy-purple-clear-case.jpg"
+            ]
+        },
+        {
+            "name": "Floral",
+            "slug": "",
+            "description": "This case features a beautiful floral design that will add a touch of femininity to your phone.",
+            "price": 0,
+            "excerpt": "",
+            "tags": [
+                "feminine",
+                "floral",
+                "pink"
+            ],
+            "thumbnail": "https://images.casetify.com/products/iphone/11/floral-pink-clear-case.jpg",
+            "images": [
+                "https://images.casetify.com/products/iphone/11/floral-pink-clear-case.jpg"
+            ]
+        },
+        {
+            "name": "Geometric",
+            "slug": "",
+            "description": "This case features a beautiful geometric design that will add a touch of modernity to your phone.",
+            "price": 0,
+            "excerpt": "",
+            "tags": [
+                "modern",
+                "geometric",
+                "black"
+            ],
+            "thumbnail": "https://images.casetify.com/products/iphone/11/geometric-black-clear-case.jpg",
+            "images": [
+                "https://images.casetify.com/products/iphone/11/geometric-black-clear-case.jpg"
+            ]
+        },
+        {
+            "name": "Rainbow",
+            "slug": "rainbow",
+            "description": "This case features a beautiful rainbow design that will add a touch of joy to your phone.",
+            "price": 40,
+            "excerpt": "string",
+            "tags": [
+                "joyful",
+                "rainbow",
+                "multi"
+            ],
+            "thumbnail": "https://images.casetify.com/products/iphone/11/rainbow-multi-clear-case.jpg",
+            "images": [
+                "https://images.casetify.com/products/iphone/11/rainbow-multi-clear-case.jpg"
+            ]
+        },
+        {
+            "name": "The White Case",
+            "slug": "the-white-case",
+            "description": "This case features a beautiful White Case design that will add a touch of elegance to your phone.",
+            "price": 52.94,
+            "excerpt": "The Wabi-Sabi Case",
+            "tags": [
+                "elegant",
+                "white case",
+                "pink",
+                "white"
+            ],
+            "thumbnail": "https://cdn-stamplib.casetify.com/cms/image/42f8b415d0573020a47485b6825af6b8.jpg",
+            "images": [
+                "https://cdn-stamplib.casetify.com/cms/image/42f8b415d0573020a47485b6825af6b8.jpg"
+            ]
+        },
+        {
+            "name": "Chrome Doodles",
+            "slug": "chrome-doodles",
+            "description": "This case features a beautiful Chrome Doodles design that will add a touch of elegance to your phone.",
+            "price": 52.94,
+            "excerpt": "Ultra Bounce Case MagSafe Compatible",
+            "tags": [
+                "elegant",
+                "chrome",
+                "pink",
+                "doodles"
+            ],
+            "thumbnail": "https://cdn-image02.casetify.com/usr/16571/16546571/~v483/30295856_iphone-15-pro-max__color_natural-titanium_16005996.png.350x350-w.m80.webp",
+            "images": [
+                "https://cdn-image02.casetify.com/usr/16571/16546571/~v483/30295856_iphone-15-pro-max__color_natural-titanium_16005996.png.350x350-w.m80.webp"
+            ]
+        },
+        {
+            "name": "Lucky Cat",
+            "slug": "lucky-cat",
+            "description": "This case features a beautiful Lucky Cat design that will add a touch of elegance to your phone.",
+            "price": 52.94,
+            "excerpt": "Bounce Case MagSafe Compatible",
+            "tags": [
+                "elegant",
+                "lucky",
+                "cat",
+                "doodles"
+            ],
+            "thumbnail": "https://cdn-image02.casetify.com/usr/24819/1524819/~v6082/20224764_iphone-15-pro-max__color_natural-titanium_16005993.png.350x350-w.m80.webp",
+            "images": [
+                "https://cdn-image02.casetify.com/usr/24819/1524819/~v6082/20224764_iphone-15-pro-max__color_natural-titanium_16005993.png.350x350-w.m80.webp"
+            ]
+        },
+        {
+            "name": "I WANNA WIN LOTTERY!!",
+            "slug": "i-wanna-win-lottery",
+            "description": "This case features a beautiful Lotery design that will add a touch of elegance to your phone.",
+            "price": 85.00,
+            "excerpt": "Bounce Case MagSafe Compatible",
+            "tags": [
+                "elegant",
+                "lucky",
+                "lootery",
+                "doodles"
+            ],
+            "thumbnail": "https://cdn-image02.casetify.com/usr/24819/1524819/~v6082/20224764_iphone-15-pro-max__color_natural-titanium_16005993.png.350x350-w.m80.webp",
+            "images": [
+                "https://cdn-image02.casetify.com/usr/24819/1524819/~v6082/20224764_iphone-15-pro-max__color_natural-titanium_16005993.png.350x350-w.m80.webp"
+            ]
+        },
+    ]
+}

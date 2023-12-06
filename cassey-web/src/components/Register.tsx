@@ -133,7 +133,7 @@ export const Register = () => {
                         <p className="mt-8">
                             Already have an account?{" "}
                             <a
-                                href="#"
+                                href="/login"
                                 className="text-blue-500 hover:text-blue-700 font-Montserrat"
                             >
                                 Login here

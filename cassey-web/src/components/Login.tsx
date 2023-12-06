@@ -107,7 +107,7 @@ export const Login = () => {
                         <p className="mt-8">
                             Need an account?{" "}
                             <a
-                                href="#"
+                                href="/register"
                                 className="text-blue-500 hover:text-blue-700 font-Montserrat"
                             >
                                 Create an account

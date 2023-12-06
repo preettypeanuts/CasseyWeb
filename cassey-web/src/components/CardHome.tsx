@@ -252,7 +252,7 @@ export const CardHome = () => {
             </div>
             <div className="w-full justify-center flex pl-[17vh] pr-[17vh] pt-[5vh] pb-24">
                 <a
-                    href="list-products"
+                    href="products"
                     className="w-full mt-2 text-center text-black border-2 border-gradient-to-br border-gradient-to-br from-yellow-100 to-pink-400 hover:bg-gradient-to-bl hover:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-Montserrat font-semibold rounded-full text-sm px-5 py-2.5"
                 >
                     See All
