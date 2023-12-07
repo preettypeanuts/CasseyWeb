@@ -49,7 +49,7 @@ export async function POST(request: Request) {
     const response = NextResponse.json(
       {
         data: {
-          message: 'Register user succes',
+          message: 'Login user succes',
           token: accessToken,
         },
       },

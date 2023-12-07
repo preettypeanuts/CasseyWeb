@@ -11,9 +11,9 @@ export type ProductModel = {
   description: string;
   exerpt: string;
   price: number;
-  tags: string;
+  tags: string[];
   thumbnail: string;
-  images: string;
+  images: string[];
   createdAt: Date;
   updatedAt: Date;
 };
@@ -25,4 +25,13 @@ export const getProducts = async () => {
     .find()
     .toArray()) as ProductModel[];
   return products;
+};
+
+export const getProductById = async (id: string) => {
+  const db = await getDb();
+  const objId = new ObjectId(id);
+  const productIdData = (await db
+    .collection("products")
+    .findOne({ _id: objId })) as ProductModel;
+  return productIdData;
 };
