@@ -1,4 +1,6 @@
+import BASE_URL from '../BaseURL'
 import { redirect } from "next/navigation"
+import { cookies } from 'next/headers'
 
 export type Response<T = {}> = {
     data?: T;
@@ -6,31 +8,36 @@ export type Response<T = {}> = {
 }
 
 export default function LoginPage() {
-    // async function myAction(formData: FormData) {
-    //     'use server'
-    //     const email = formData.get('email')
-    //     const password = formData.get('password')
+    const handleLogin = async (formData: FormData) => {
+        'use server'
+        const email = formData.get('email')
+        const password = formData.get('password')
+        // console.log(name, username, email, password);
 
-    //     const response = await fetch('http://localhost:3000/api/users/login', {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify({
-    //             email,
-    //             password,
-    //         })
-    //     })
+        const response = await fetch(
+            `${BASE_URL}/users/login`,
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email,
+                    password,
+                })
+            })
 
-    //     const result = (await response.json()) as Response<{
-    //         accessToken: string
-    //     }>
+        const result = (await response.json()) as Response<{
+            token: string
+        }>;
 
-    //     if (!response.ok) {
-    //         return redirect('login?error=' + result.messsage)
-    //     }
-    //     return redirect('/login')
-    // }
+        if (!response.ok) {
+            return redirect('login?error=' + result.messsage)
+        }
+
+        if (result.data) cookies().set("Authorization", `Bearer ${result.data.token}`)
+        return redirect('/')
+    }
     return (
         <>
             <section className="flex flex-col md:flex-row h-screen items-center">
@@ -49,7 +56,7 @@ export default function LoginPage() {
                         <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12 font-Montserrat">
                             Log in to your account
                         </h1>
-                        <form className="mt-6" action="#" method="POST">
+                        <form className="mt-6" action={handleLogin} method="POST">
                             <div>
                                 <label className="block text-gray-700 font-Montserrat">
                                     Email Address

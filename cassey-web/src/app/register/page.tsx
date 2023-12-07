@@ -13,7 +13,7 @@ export default function RegisterPage() {
         const username = formData.get('username')
         const email = formData.get('email')
         const password = formData.get('password')
-        console.log(name, username, email, password);
+        // console.log(name, username, email, password);
 
         const response = await fetch(
             `${BASE_URL}/users/register`, 

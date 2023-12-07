@@ -17,8 +17,7 @@ export async function POST(request: Request) {
     if (!parsedData.success) throw parsedData.error;
 
     const user = await getUserByEmail(data.email);
-    console.log(user._id, "ini<<<");
-    
+
 
     if (!user) {
       return NextResponse.json(
@@ -43,20 +42,25 @@ export async function POST(request: Request) {
         }
       );
     }
-    const token = createToken({
+    const accessToken = createToken({
       _id: user._id.toString(),
     });
 
-    return NextResponse.json(
+    const response = NextResponse.json(
       {
         data: {
-          accessToken: token,
+          message: 'Register user succes',
+          token: accessToken,
         },
       },
       {
         status: 200,
       }
     );
+
+    response.cookies.set("Authorization", `Bearer ${accessToken}`)
+    
+    return response
   } catch (error) {
     if (error instanceof z.ZodError) {
       return Response.json(
