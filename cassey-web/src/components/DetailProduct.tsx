@@ -1,7 +1,8 @@
 'use client'
+import { DetailProductProps } from "@/app/products/page"
 import { WishListBtn } from "./WishListBtn"
 
-export const DetailProduct = () => {
+export const DetailProduct: React.FC<DetailProductProps> = ({product}) => {
     return (
         <>
             <div className="w-screen h-screen">

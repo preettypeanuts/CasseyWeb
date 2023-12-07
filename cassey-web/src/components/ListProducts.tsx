@@ -1,10 +1,15 @@
-'use client'
-
+// 'use client'
 // import { InfiniteScrollBar } from "./InfiniteScroll"
+import { Product } from "@/app/products/page"
 import { SearchBar } from "./SearchBar"
+import { SingleCard } from "./SingleCard"
 import { WishListBtn } from "./WishListBtn"
 
-export const ListProducts = () => {
+type Props = {
+    products: Product[]
+}
+
+export const ListProducts = ({products}: Props) => {
     return (
         <>
             <div className="w-screen h-screen">
@@ -15,242 +20,17 @@ export const ListProducts = () => {
                 </div>
                 <SearchBar />
                 {/* <InfiniteScrollBar> */}
-
-                <div className="pl-[15vh] pr-[15vh] pt-[5vh] flex flex-row justify-around">
-                    <div className="transition duration-500 ease-in-out transform hover:scale-105 w-[35vh] max-w-sm bg-white rounded-[30px] shadow-customShadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="/detail-product">
-                            <img
-                                className="p-8 rounded-t-lg"
-                                src="https://cdn-image02.casetify.com/usr/29073/1469073/~v6692/15349384x2_iphone-15-pro__color_natural-titanium_16005986.png.1000x1000-w.m80.webp"
-                                alt="product image"
-                            />
-                        </a>
-                        <div className="px-5 pb-5 justify-center align-middle flex flex-col">
-                            <a href="#">
-                                <h5 className="text-[25px] font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    IPhone
-                                </h5>
-                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Cherry Blossom Gradient
-                                </h5>
-                            </a>
-                            <div className="flex items-center justify-between pt-2 pt-2">
-                                <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                                    $80 USD
-                                </p>
-                                <button className="">
-                                    <i className="bx bx-heart bx-sm" />
-                                </button>
-                            </div>
-                            <WishListBtn />
-                        </div>
-                    </div>
-                    <div className="transition duration-500 ease-in-out transform hover:scale-105 w-[35vh] max-w-sm bg-white rounded-[30px] shadow-customShadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img
-                                className="p-8 rounded-t-lg"
-                                src="https://cdn-image02.casetify.com/usr/29073/1469073/~v6692/15349384x2_iphone-15-pro__color_natural-titanium_16005986.png.1000x1000-w.m80.webp"
-                                alt="product image"
-                            />
-                        </a>
-                        <div className="px-5 pb-5 justify-center align-middle flex flex-col">
-                            <a href="#">
-                                <h5 className="text-[25px] font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    IPhone
-                                </h5>
-                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Cherry Blossom Gradient
-                                </h5>
-                            </a>
-                            <div className="flex items-center justify-between pt-2">
-                                <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                                    $80 USD
-                                </p>
-                                <button className="">
-                                    <i className="bx bx-heart bx-sm" />
-                                </button>
-                            </div>
-                            <WishListBtn />
-                        </div>
-                    </div>
-                    <div className="transition duration-500 ease-in-out transform hover:scale-105 w-[35vh] max-w-sm bg-white rounded-[30px] shadow-customShadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img
-                                className="p-8 rounded-t-lg"
-                                src="https://cdn-image02.casetify.com/usr/29073/1469073/~v6692/15349384x2_iphone-15-pro__color_natural-titanium_16005986.png.1000x1000-w.m80.webp"
-                                alt="product image"
-                            />
-                        </a>
-                        <div className="px-5 pb-5 justify-center align-middle flex flex-col">
-                            <a href="#">
-                                <h5 className="text-[25px] font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    IPhone
-                                </h5>
-                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Cherry Blossom Gradient
-                                </h5>
-                            </a>
-                            <div className="flex items-center justify-between pt-2">
-                                <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                                    $80 USD
-                                </p>
-                                <button className="">
-                                    <i className="bx bx-heart bx-sm" />
-                                </button>
-                            </div>
-                            <WishListBtn />
-                        </div>
-                    </div>
-                    <div className="transition duration-500 ease-in-out transform hover:scale-105 w-[35vh] max-w-sm bg-white rounded-[30px] shadow-customShadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img
-                                className="p-8 rounded-t-lg"
-                                src="https://cdn-image02.casetify.com/usr/29073/1469073/~v6692/15349384x2_iphone-15-pro__color_natural-titanium_16005986.png.1000x1000-w.m80.webp"
-                                alt="product image"
-                            />
-                        </a>
-                        <div className="px-5 pb-5 justify-center align-middle flex flex-col">
-                            <a href="#">
-                                <h5 className="text-[25px] font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    IPhone
-                                </h5>
-                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Cherry Blossom Gradient
-                                </h5>
-                            </a>
-                            <div className="flex items-center justify-between pt-2">
-                                <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                                    $80 USD
-                                </p>
-                                <button className="">
-                                    <i className="bx bx-heart bx-sm" />
-                                </button>
-                            </div>
-                            <WishListBtn />
-                        </div>
-                    </div>
-                </div>
-                <div className="pl-[15vh] pr-[15vh] pt-[5vh] flex flex-row justify-around">
-                    <div className="transition duration-500 ease-in-out transform hover:scale-105 w-[35vh] max-w-sm bg-white rounded-[30px] shadow-customShadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img
-                                className="p-8 rounded-t-lg"
-                                src="https://cdn-image02.casetify.com/usr/29073/1469073/~v6692/15349384x2_iphone-15-pro__color_natural-titanium_16005986.png.1000x1000-w.m80.webp"
-                                alt="product image"
-                            />
-                        </a>
-                        <div className="px-5 pb-5 justify-center align-middle flex flex-col">
-                            <a href="#">
-                                <h5 className="text-[25px] font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    IPhone
-                                </h5>
-                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Cherry Blossom Gradient
-                                </h5>
-                            </a>
-                            <div className="flex items-center justify-between pt-2">
-                                <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                                    $80 USD
-                                </p>
-                                <button className="">
-                                    <i className="bx bx-heart bx-sm" />
-                                </button>
-                            </div>
-                            <WishListBtn />
-                        </div>
-                    </div>
-                    <div className="transition duration-500 ease-in-out transform hover:scale-105 w-[35vh] max-w-sm bg-white rounded-[30px] shadow-customShadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img
-                                className="p-8 rounded-t-lg"
-                                src="https://cdn-image02.casetify.com/usr/29073/1469073/~v6692/15349384x2_iphone-15-pro__color_natural-titanium_16005986.png.1000x1000-w.m80.webp"
-                                alt="product image"
-                            />
-                        </a>
-                        <div className="px-5 pb-5 justify-center align-middle flex flex-col">
-                            <a href="#">
-                                <h5 className="text-[25px] font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    IPhone
-                                </h5>
-                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Cherry Blossom Gradient
-                                </h5>
-                            </a>
-                            <div className="flex items-center justify-between pt-2">
-                                <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                                    $80 USD
-                                </p>
-                                <button className="">
-                                    <i className="bx bx-heart bx-sm" />
-                                </button>
-                            </div>
-                            <WishListBtn />
-                        </div>
-                    </div>
-                    <div className="transition duration-500 ease-in-out transform hover:scale-105 w-[35vh] max-w-sm bg-white rounded-[30px] shadow-customShadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img
-                                className="p-8 rounded-t-lg"
-                                src="https://cdn-image02.casetify.com/usr/29073/1469073/~v6692/15349384x2_iphone-15-pro__color_natural-titanium_16005986.png.1000x1000-w.m80.webp"
-                                alt="product image"
-                            />
-                        </a>
-                        <div className="px-5 pb-5 justify-center align-middle flex flex-col">
-                            <a href="#">
-                                <h5 className="text-[25px] font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    IPhone
-                                </h5>
-                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Cherry Blossom Gradient
-                                </h5>
-                            </a>
-                            <div className="flex items-center justify-between pt-2">
-                                <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                                    $80 USD
-                                </p>
-                                <button className="">
-                                    <i className="bx bx-heart bx-sm" />
-                                </button>
-                            </div>
-                            <WishListBtn />
-                        </div>
-                    </div>
-                    <div className="transition duration-500 ease-in-out transform hover:scale-105 w-[35vh] max-w-sm bg-white rounded-[30px] shadow-customShadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img
-                                className="p-8 rounded-t-lg"
-                                src="https://cdn-image02.casetify.com/usr/29073/1469073/~v6692/15349384x2_iphone-15-pro__color_natural-titanium_16005986.png.1000x1000-w.m80.webp"
-                                alt="product image"
-                            />
-                        </a>
-                        <div className="px-5 pb-5 justify-center align-middle flex flex-col">
-                            <a href="#">
-                                <h5 className="text-[25px] font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    IPhone
-                                </h5>
-                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Cherry Blossom Gradient
-                                </h5>
-                            </a>
-                            <div className="flex items-center justify-between pt-2">
-                                <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                                    $80 USD
-                                </p>
-                                <button className="">
-                                    <i className="bx bx-heart bx-sm" />
-                                </button>
-                            </div>
-                            <WishListBtn />
-                        </div>
-                    </div>
+                <div className="mt-10 flex flex-wrap justify-center px-4 gap-10">
+                    {products.map(product =>{
+                        return <SingleCard key={product.slug} product={product}/>
+                    })}
+                    
                 </div>
                 {/* </InfiniteScrollBar> */}
                 <div className="w-full justify-center flex pl-[17vh] pr-[17vh] pt-[5vh] pb-24">
-
                     <a
                         href="#"
-                        className="w-full mt-2 text-center text-black border-2 border-gradient-to-br border-gradient-to-br from-yellow-100 to-pink-400 hover:bg-gradient-to-bl hover:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-Montserrat font-semibold rounded-full text-sm px-5 py-2.5"
-                    >
+                        className="w-full mt-2 text-center text-black border-2 border-gradient-to-br border-gradient-to-br from-yellow-100 to-pink-400 hover:bg-gradient-to-bl hover:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-Montserrat font-semibold rounded-full text-sm px-5 py-2.5">
                         Load More
                     </a>
                 </div>

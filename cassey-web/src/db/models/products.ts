@@ -1,8 +1,5 @@
 import { ObjectId } from "mongodb";
-import { getMongoClientInstance } from "../config";
 import { getDb } from "./user";
-
-const DATABASE_NAME = "CasseyWeb";
 
 export type ProductModel = {
   _id: ObjectId;
