@@ -1,13 +1,8 @@
 import { ObjectId } from "mongodb";
 import { getMongoClientInstance } from "../config";
+import { hashText } from "../helpers/bcrypt";
 
 const DATABASE_NAME = "CasseyWeb";
-
-export const getDb = async () => {
-  const client = await getMongoClientInstance();
-  const db = client.db(DATABASE_NAME);
-  return db;
-};
 
 export type UserModel = {
   _id: ObjectId;
@@ -23,6 +18,12 @@ export type UserModelCreateInput = {
   username: string;
   email: string;
   password: string;
+};
+
+export const getDb = async () => {
+  const client = await getMongoClientInstance();
+  const db = client.db(DATABASE_NAME);
+  return db;
 };
 
 export const getUsers = async () => {
@@ -48,8 +49,18 @@ export const createUser = async (data: UserModelCreateInput) => {
   const db = await getDb();
   const newData: UserModelCreateInput = {
     ...data,
-    // password: data.password,
+    password: hashText(data.password),
   };
   const newUser = await db.collection("users").insertOne(newData);
   return newUser;
+};
+
+export const getUserByEmail = async (email: string) => {
+  const db = await getDb();
+  const user = (await db
+    .collection("users")
+    .findOne({ email: email })) as UserModel;
+    console.log(user, "usernya");
+    
+  return user;
 };
