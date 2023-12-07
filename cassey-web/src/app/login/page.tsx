@@ -15,7 +15,7 @@ export default function LoginPage() {
         // console.log(name, username, email, password);
 
         const response = await fetch(
-            `${BASE_URL}/users/login`,
+            `${BASE_URL}/api/users/login/`,
             {
                 method: 'POST',
                 headers: {

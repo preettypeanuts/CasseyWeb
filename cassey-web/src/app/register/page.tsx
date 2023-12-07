@@ -16,7 +16,7 @@ export default function RegisterPage() {
         // console.log(name, username, email, password);
 
         const response = await fetch(
-            `${BASE_URL}/users/register`, 
+            `${BASE_URL}/api/users/register/`, 
             {
             method: 'POST',
             headers: {

@@ -1,8 +1,15 @@
 'use client'
-import { DetailProductProps } from "@/app/products/page"
+import { DetailProductProps, Product, ProductDetail } from "@/app/products/page"
 import { WishListBtn } from "./WishListBtn"
 
-export const DetailProduct: React.FC<DetailProductProps> = ({product}) => {
+type Props = {
+    product: ProductDetail
+}
+
+export const DetailProduct = ({ product }: Props) => {
+    console.log('====================================');
+    console.log(product.data);
+    console.log('====================================');
     return (
         <>
             <div className="w-screen h-screen">
@@ -10,26 +17,21 @@ export const DetailProduct: React.FC<DetailProductProps> = ({product}) => {
                     <div className="bg-transparent rounded-[30px] dark:bg-gray-800 dark:border-gray-700 flex">
                         <a href="#">
                             <img
-                                className="p-8 rounded-t-lg h-auto max-w-lg"
-                                src="https://cdn-image02.casetify.com/usr/29073/1469073/~v6692/15349384x2_iphone-15-pro__color_natural-titanium_16005986.png.1000x1000-w.m80.webp"
+                                className="p-8 h-auto max-w-lg"
+                                src={product.data.thumbnail}
                                 alt="product image"
                             />
                         </a>
                         <div className="mt-[39px]">
                             <p className="flex text-[6vh] text-black font-black font-serif">
-                                Cherry Blossom Gradient
+                                {product.data.name}
                             </p>
                             <a href="#">
                                 <p className="text-justify">
-                                    Ultra Impact Case dari Casetify adalah pilihan terbaik untuk
-                                    perlindungan maksimal smartphone tanpa mengorbankan gaya. Dibuat
-                                    dari bahan polikarbonat dan TPU yang tahan lama, case ini
-                                    menawarkan perlindungan tambahan terhadap benturan dan jatuh.
-                                    Teknologi QiTech™-nya mampu melindungi smartphone dari jatuh
-                                    hingga 9.8 kaki tanpa menambah bobot berlebihan. Dengan desain
-                                    yang stylish dan motif menarik, case ini tidak hanya berfungsi
-                                    sebagai perlindungan, tetapi juga sebagai aksesori fashion yang
-                                    menambah gaya pada perangkat Anda.
+                                    <p>
+                                        {product.data.description}
+                                    </p>
+                                    The Ultra Impact Case from Casetify is the best choice for maximum smartphone protection without compromising style. Made from durable polycarbonate and TPU materials, this case offers additional protection against impacts and drops. Its QiTech™ technology can protect the smartphone from falls up to 9.8 feet without adding excessive weight. With a stylish design and attractive motif, this case not only serves as protection but also as a fashion accessory that adds flair to your device.
                                 </p>
                                 <div className="pt-2">
                                     <label
@@ -50,7 +52,7 @@ export const DetailProduct: React.FC<DetailProductProps> = ({product}) => {
                                     </select>
                                 </div>
                                 <p className="text-2xl font-bold text-gray-900 dark:text-white pt-2">
-                                    $80 USD
+                                    ${product.data.price} USD
                                 </p>
                             </a>
                             <div className="pt-2">
@@ -62,7 +64,7 @@ export const DetailProduct: React.FC<DetailProductProps> = ({product}) => {
                                     <i className="bx bx-cart-add" />
                                     Add to cart
                                 </a>
-                                <WishListBtn/>
+                                <WishListBtn />
                                 {/* <button
                                     href="#"
                                     className="mt-2 mr-4 text-center text-black border-2 border-gradient-to-br border-gradient-to-br from-yellow-100 to-pink-500 hover:bg-gradient-to-bl hover:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-Montserrat font-semibold rounded-full text-sm px-5 py-2.5"

@@ -8,7 +8,7 @@ export const SingleCard = ({product}: Props) => {
     return (
         <>
             <div className="transition duration-500 ease-in-out transform hover:scale-105 w-[35vh] max-w-sm bg-white rounded-[30px] shadow-customShadow dark:bg-gray-800 dark:border-gray-700">
-                <Link href={`/products/${product._id}`}>
+                <Link href={`/products/${product._id}/`}>
                     <img
                         className="p-8 rounded-t-lg"
                         src={product.thumbnail}
