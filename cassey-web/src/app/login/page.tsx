@@ -1,36 +1,36 @@
-// import { redirect } from "next/navigation"
+import { redirect } from "next/navigation"
 
-export type Response<T> = {
+export type Response<T = {}> = {
     data?: T;
     messsage?: string;
 }
 
 export default function LoginPage() {
-    async function myAction(formData: FormData) {
-        'use server'
-        const email = formData.get('email')
-        const password = formData.get('password')
+    // async function myAction(formData: FormData) {
+    //     'use server'
+    //     const email = formData.get('email')
+    //     const password = formData.get('password')
 
-        const response = await fetch('http://localhost:3000/api/users/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                email,
-                password,
-            })
-        })
+    //     const response = await fetch('http://localhost:3000/api/users/login', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({
+    //             email,
+    //             password,
+    //         })
+    //     })
 
-        const result = (await response.json()) as Response<{
-            accessToken: string
-        }>
+    //     const result = (await response.json()) as Response<{
+    //         accessToken: string
+    //     }>
 
-        if (!response.ok) {
-            return redirect('login?error=' + result.messsage)
-        }
-        return redirect('/login')
-    }
+    //     if (!response.ok) {
+    //         return redirect('login?error=' + result.messsage)
+    //     }
+    //     return redirect('/login')
+    // }
     return (
         <>
             <section className="flex flex-col md:flex-row h-screen items-center">

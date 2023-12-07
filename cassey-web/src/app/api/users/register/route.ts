@@ -4,7 +4,7 @@ import { z } from "zod";
 
 export async function POST(request: Request) {
   try {
-    const data = (await request.json()) as Omit<UserModel, "_id">;
+    const data = (await request.json());
     const parsedData = z
       .object({
         username: z.string(),
