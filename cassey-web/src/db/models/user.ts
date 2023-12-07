@@ -31,7 +31,7 @@ export const getUsers = async () => {
     .collection("users")
     .find()
     .project({ password: 0 })
-    .toArray()) as UserMode[];
+    .toArray()) as UserModel[];
   return users;
 };
 
@@ -46,15 +46,10 @@ export const getUserById = async (userId: string) => {
 
 export const createUser = async (data: UserModelCreateInput) => {
   const db = await getDb();
-
-  const modifiedUser: UserModelCreateInput = {
+  const newData: UserModelCreateInput = {
     ...data,
-    password: data.password,
+    // password: data.password,
   };
-  const userById = await db.collection("users").insertOne({ modifiedUser });
-  return userById;
-
-  //   const userById = (await db
-  //     .insertOne({ _id: objId }, { projection: { password: 0 } })) as UserMode;
-  //   return userById;
+  const newUser = await db.collection("users").insertOne(newData);
+  return newUser;
 };
