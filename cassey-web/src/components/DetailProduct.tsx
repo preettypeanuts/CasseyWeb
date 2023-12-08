@@ -1,5 +1,5 @@
 'use client'
-import { DetailProductProps, Product, ProductDetail } from "@/app/products/page"
+import { ProductDetail } from "@/app/products/page"
 import { WishListBtn } from "./WishListBtn"
 
 type Props = {
@@ -7,9 +7,6 @@ type Props = {
 }
 
 export const DetailProduct = ({ product }: Props) => {
-    console.log('====================================');
-    console.log(product.data);
-    console.log('====================================');
     return (
         <>
             <div className="w-screen h-screen">

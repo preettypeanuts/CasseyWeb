@@ -6,6 +6,8 @@ async function getProductById(id: string): Promise<Product> {
     const response = await fetch(`${BASE_URL}/api/products/${id}/`)
     const data = await response.json()
     return data
+
+    throw new Error("Throw Error") 
 }
 
 type Props = {
@@ -16,9 +18,6 @@ type Props = {
 
 export default async function ProductDetail({ params }: Props) {
     const product = await getProductById(params.id)
-    // console.log('====================================');
-    // console.log(product);
-    // console.log('====================================');
     return (
         <>
             <Navbar>

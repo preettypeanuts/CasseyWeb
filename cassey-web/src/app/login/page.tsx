@@ -36,7 +36,7 @@ export default function LoginPage() {
         }
 
         if (result.data) cookies().set("Authorization", `Bearer ${result.data.token}`)
-        return redirect('/')
+        return redirect('/products')
     }
     return (
         <>

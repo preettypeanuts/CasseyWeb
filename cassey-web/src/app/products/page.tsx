@@ -2,6 +2,7 @@ import { ListProducts } from "@/components/ListProducts"
 import { Navbar } from "@/components/Navbar"
 import { SearchBar } from "@/components/SearchBar"
 import BASE_URL from "@/app/BaseURL"
+import { cookies } from "next/headers"
 
 export interface Product {
     _id: string,
@@ -39,7 +40,12 @@ export interface DetailProductProps {
 }
 
 async function getProducts() {
-    const response = await fetch(`${BASE_URL}/api/products/`)
+    const response = await fetch(`${BASE_URL}/api/products/`, {
+        cache: "no-store",
+        headers: {
+            Cookie: cookies().toString()
+        }
+    })
     const data = await response.json() as Product[]
     return data
 }
