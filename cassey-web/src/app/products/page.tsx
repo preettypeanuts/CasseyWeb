@@ -51,7 +51,7 @@ async function getProducts() {
     if (!data) {
         throw new Error("Throw Error")
     }
-    
+
     return data
 }
 

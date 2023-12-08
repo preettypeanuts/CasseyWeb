@@ -44,6 +44,7 @@ export async function POST(request: Request) {
     }
     const accessToken = createToken({
       _id: user._id.toString(),
+      email: user.email.toString(),
     });
 
     const response = NextResponse.json(

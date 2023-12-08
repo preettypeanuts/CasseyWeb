@@ -8,14 +8,13 @@ if (!secret) {
   throw new Error("JWT secret is not defined");
 }
 
-const createToken = (payload: { _id: string; username: string; email: string }) => {
+const createToken = (payload: { _id: string; email: string }) => {
   return jwt.sign(payload, secret);
 };
 
 type JWTCustom = {
   _id: string;
   email: string;
-  username: string;
 };
 
 async function decodeToken(token: string) {
