@@ -15,6 +15,10 @@ export type ProductModel = {
   updatedAt: Date;
 };
 
+export type ProductSearch = {
+  name: string;
+}
+
 export const getProducts = async () => {
   const db = await getDb();
   const products = (await db
@@ -44,10 +48,12 @@ export const pagination = async () => {
   return products;
 };
 
-export const searchProduct = async () => {
+export const searchProduct = async (data: string) => {
   const db = await getDb();
-  const data = (await db
+  const searchData = await db
     .collection("products")
-    .find({$or: [{ "name": search }]})
-    )
-}
+    .find({ name: { $regex: data, $options: 'i' } })
+    .toArray();
+  return searchData;
+};
+
