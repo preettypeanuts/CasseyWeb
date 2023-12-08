@@ -14,7 +14,7 @@ export type WishlistModel = {
 };
 
 export const getWishlists = async (userId: string) => {
-  console.log(userId, "<<<");
+  // console.log(userId, "<<<");
   
   const db = await getDb();
 
@@ -53,4 +53,16 @@ export const addWishList = async (data: WishlistInputModel) => {
   const db = await getDb();
   const newWishes = await db.collection("wishlists").insertOne(data);
   return newWishes;
+};
+
+type WishlistDeleteModel = Omit<WishlistModel, "_id" | "product" | "user" | "createdAt" | "updatedAt">;
+
+
+export const deleteWishList = async (data: WishlistDeleteModel) => {
+  const db = await getDb();
+  const deletedWish = await db.collection("wishlists").deleteOne({
+    userId: data.userId,
+    productId: data.productId,
+  });
+  return deletedWish;
 };
