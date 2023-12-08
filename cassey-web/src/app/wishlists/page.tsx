@@ -18,7 +18,7 @@ export interface WishlistModel {
     wishes: WishlistModel[]
 }
 
- async function getWishlists() {
+ export async function getWishlists() {
     const response = await fetch(`${BASE_URL}/api/wishlists/`, {
         cache: "no-store",
         headers: {
@@ -40,21 +40,6 @@ export interface WishlistModel {
 
 export default async function WishListsPage() {
     const wishes = await getWishlists()
-    // console.log(wishes.data, "<PRODUCT<<");
-    // console.log(wishes.data[0].user, "<PRODUCT<<");
-    /**
-     * [
-     *   {
-     *     product: {}
-     *   },
-     * {
-     *     product: {}
-     *   },
-     * {
-     *     product: {}
-     *   }
-     * ]
-     */
     return (
         <>
             <Navbar>

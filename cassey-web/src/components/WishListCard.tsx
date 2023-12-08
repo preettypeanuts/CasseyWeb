@@ -1,11 +1,45 @@
+import { useEffect, useState } from "react";
+import { RemoveBtn } from "./RemoveBtn";
+import { WishListBtn } from "./WishListBtn";
+import Link from "next/link";
+import BASE_URL from "@/app/BaseURL";
 
-import { RemoveBtn } from "./RemoveBtn"
-import { WishListBtn } from "./WishListBtn"
-import Link from "next/link"
+export const WishListCard = ({ wish, updateWishlist }) => {
+    const [loading, setLoading] = useState(false);
+    const [wishlist, setWishlist] = useState([]); 
 
-export const WishListCard = ({wish}) => {
-    // console.log(wish);
-    
+    useEffect(() => {
+        setWishlist(updateWishlist); 
+    }, [updateWishlist]);
+
+    const handleRemove = async () => {
+        try {
+            setLoading(true);
+            const response = await fetch(
+                `${BASE_URL}/api/wishlists/`,
+                {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ productId: wish._id }),
+                }
+            );
+
+            if (response.ok) {
+                console.log('Wishlist item removed!');
+                const updatedWishlist = wishlist.filter(item => item._id !== wish._id);
+                setWishlist(updatedWishlist); 
+            } else {
+                console.error('Failed to remove wishlist item');
+            }
+        } catch (error) {
+            console.error('Error removing wishlist item:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <>
             <div className="transition duration-500 ease-in-out transform hover:scale-105 w-[35vh] max-w-sm bg-white rounded-[30px] shadow-customShadow dark:bg-gray-800 dark:border-gray-700">
@@ -22,7 +56,7 @@ export const WishListCard = ({wish}) => {
                             {wish?.name}
                         </h5>
                         <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                        {wish.excerpt}
+                            {wish.excerpt}
                         </h5>
                     </a>
                     <div className="flex items-center justify-between pt-2 pt-2">
@@ -33,7 +67,7 @@ export const WishListCard = ({wish}) => {
                             <i className="bx bx-heart bx-sm" />
                         </button>
                     </div>
-                    <RemoveBtn/>
+                    <RemoveBtn handleRemove={handleRemove} />
                 </div>
             </div>
         </>

@@ -32,3 +32,22 @@ export const getProductById = async (id: string) => {
     .findOne({ _id: objId })) as ProductModel;
   return productIdData;
 };
+
+export const pagination = async () => {
+  const db = await getDb();
+  const products = (await db
+    .collection("products")
+    .find()
+    .skip(0)
+    // .limit(8)
+    .toArray()) as ProductModel[];
+  return products;
+};
+
+export const searchProduct = async () => {
+  const db = await getDb();
+  const data = (await db
+    .collection("products")
+    .find({$or: [{ "name": search }]})
+    )
+}

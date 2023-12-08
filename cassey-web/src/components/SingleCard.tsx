@@ -8,10 +8,10 @@ export const SingleCard = ({product}: Props) => {
     return (
         <>
             <div className="transition duration-500 ease-in-out transform hover:scale-105 w-[35vh] max-w-sm bg-white rounded-[30px] shadow-customShadow dark:bg-gray-800 dark:border-gray-700">
-                <Link href={`/products/${product._id}/`}>
+                <Link href={`/products/${product?._id}/`}>
                     <img
                         className="p-8 rounded-t-lg"
-                        src={product.thumbnail}
+                        src={product?.thumbnail}
                         alt="product image"
                     />
                 </Link>
@@ -21,12 +21,12 @@ export const SingleCard = ({product}: Props) => {
                             {product?.name}
                         </h5>
                         <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                        {product.excerpt}
+                        {product?.excerpt}
                         </h5>
                     </a>
                     <div className="flex items-center justify-between pt-2 pt-2">
                         <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                            ${product.price} USD
+                            ${product?.price} USD
                         </p>
                         <button className="">
                             <i className="bx bx-heart bx-sm" />
