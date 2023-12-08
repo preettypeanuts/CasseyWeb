@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
   const decodedUser = await decodeToken(accessToken);
   const userId = decodedUser._id;
 
-  const wishes = await addWishList({ //!ENDPOINT
+  const wishes = await addWishList({ 
     userId: new ObjectId(userId),
     productId: new ObjectId(productId),
     createdAt: new Date(),

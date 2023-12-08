@@ -7,9 +7,7 @@ type Props = {
 }
 
 export const DetailProduct = ({ product }: Props) => {
-    console.log('====================================');
-    console.log(product);
-    console.log('====================================');
+
     return (
         <>
             <div className="w-screen h-screen">

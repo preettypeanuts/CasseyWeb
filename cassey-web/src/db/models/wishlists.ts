@@ -1,5 +1,5 @@
 import { ObjectId } from "mongodb";
-import { getDb } from "./user";
+import { UserModel, getDb } from "./user";
 import { ProductModel } from "./products";
 import { log } from "console";
 
@@ -9,7 +9,8 @@ export type WishlistModel = {
   productId: ObjectId;
   createdAt: Date;
   updatedAt: Date;
-  wishListUser: ProductModel[];
+  product: ProductModel;
+  user: UserModel;
 };
 
 export const getWishlists = async (userId: string) => {
@@ -39,12 +40,14 @@ export const getWishlists = async (userId: string) => {
           as: "product",
         },
       },
+      { $set: { 'user': { $first: '$user' } } },
+      { $set: { 'product': { $first: '$product' } } },
     ])
     .toArray()) as WishlistModel[];
   return wishes;
 };
 
-type WishlistInputModel = Omit<WishlistModel, "_id" | "wishListUser">;
+type WishlistInputModel = Omit<WishlistModel, "_id" | "product" | "user">;
 
 export const addWishList = async (data: WishlistInputModel) => {
   const db = await getDb();
