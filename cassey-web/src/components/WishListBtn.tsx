@@ -4,7 +4,7 @@ import BASE_URL from "@/app/BaseURL";
 import { useState } from "react";
 
 export const WishListBtn = ({ product }) => {
-    
+
     const [loading, setLoading] = useState(false);
 
     const handleWishlist = async () => {
@@ -12,14 +12,14 @@ export const WishListBtn = ({ product }) => {
             setLoading(true);
 
             const response = await fetch(
-                `${BASE_URL}/api/wishlist/`, 
+                `${BASE_URL}/api/wishlists/`,
                 {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ productId: product._id }), // Mengirim ID produk ke server
-            });
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ productId: product._id }),
+                });
 
             if (response.ok) {
                 console.log('Product added to wishlist!');

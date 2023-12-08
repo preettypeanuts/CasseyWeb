@@ -3,6 +3,7 @@ import { getMongoClientInstance } from "../config";
 import { hashText } from "../helpers/bcrypt";
 
 const DATABASE_NAME = "CasseyWeb";
+// const DATABASE_NAME = "Cassey02";
 
 export type UserModel = {
   _id: ObjectId;
