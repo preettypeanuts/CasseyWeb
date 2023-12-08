@@ -7,6 +7,9 @@ type Props = {
 }
 
 export const DetailProduct = ({ product }: Props) => {
+    console.log('====================================');
+    console.log(product);
+    console.log('====================================');
     return (
         <>
             <div className="w-screen h-screen">
@@ -15,18 +18,18 @@ export const DetailProduct = ({ product }: Props) => {
                         <a href="#">
                             <img
                                 className="p-8 h-auto max-w-lg"
-                                src={product.data.thumbnail}
+                                src={product.data?.thumbnail}
                                 alt="product image"
                             />
                         </a>
                         <div className="mt-[39px]">
                             <p className="flex text-[6vh] text-black font-black font-serif">
-                                {product.data.name}
+                                {product.data?.name}
                             </p>
                             <a href="#">
                                 <p className="text-justify">
                                     <p>
-                                        {product.data.description}
+                                        {product.data?.description}
                                     </p>
                                     The Ultra Impact Case from Casetify is the best choice for maximum smartphone protection without compromising style. Made from durable polycarbonate and TPU materials, this case offers additional protection against impacts and drops. Its QiTech™ technology can protect the smartphone from falls up to 9.8 feet without adding excessive weight. With a stylish design and attractive motif, this case not only serves as protection but also as a fashion accessory that adds flair to your device.
                                 </p>
@@ -49,7 +52,7 @@ export const DetailProduct = ({ product }: Props) => {
                                     </select>
                                 </div>
                                 <p className="text-2xl font-bold text-gray-900 dark:text-white pt-2">
-                                    ${product.data.price} USD
+                                    ${product.data?.price} USD
                                 </p>
                             </a>
                             <div className="pt-2">

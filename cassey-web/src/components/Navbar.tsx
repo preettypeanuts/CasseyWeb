@@ -2,6 +2,7 @@
 import { ReactNode } from "react"
 import { FiUser, FiSearch, FiShoppingBag } from "react-icons/fi";
 import { usePathname } from 'next/navigation'
+import Logout from "@/actions/auth";
 
 export const Navbar = ({ children }: { children: ReactNode }) => {
   const pathName = usePathname()
@@ -83,12 +84,12 @@ export const Navbar = ({ children }: { children: ReactNode }) => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  <button
+                    onClick={() => Logout()}
+                    className="block px-4 py-2 text-sm text-red-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >
                     Sign out
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>

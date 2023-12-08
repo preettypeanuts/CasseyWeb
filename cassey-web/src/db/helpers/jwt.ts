@@ -1,5 +1,6 @@
 import { JWTPayload, jwtVerify } from "jose";
 import jwt from "jsonwebtoken";
+import * as jose from 'jose'
 
 const secret = process.env.JWT_SECRET;
 
@@ -7,12 +8,14 @@ if (!secret) {
   throw new Error("JWT secret is not defined");
 }
 
-const createToken = (payload: { _id: string }) => {
+const createToken = (payload: { _id: string; username: string; email: string }) => {
   return jwt.sign(payload, secret);
 };
 
 type JWTCustom = {
   _id: string;
+  email: string;
+  username: string;
 };
 
 async function decodeToken(token: string) {
@@ -24,7 +27,7 @@ async function decodeToken(token: string) {
     payload,
   }: {
     payload: JWTCustom & JWTPayload;
-  } = await jwtVerify(token, secret);
+  } = await jose.jwtVerify(token, secret);
 
   return payload;
 }

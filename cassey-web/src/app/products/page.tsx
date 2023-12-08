@@ -47,6 +47,11 @@ async function getProducts() {
         }
     })
     const data = await response.json() as Product[]
+
+    if (!data) {
+        throw new Error("Throw Error")
+    }
+    
     return data
 }
 
