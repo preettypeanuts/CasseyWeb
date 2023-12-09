@@ -26,13 +26,9 @@ export const Login = () => {
                                 </label>
                                 <input
                                     type="email"
-                                    name=""
-                                    id=""
+                                    name="email"
                                     placeholder="Enter Email Address"
                                     className="font-Montserrat rounded-full w-full px-4 py-3 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
-                                    autofocus=""
-                                    autoComplete=""
-                                    required=""
                                 />
                             </div>
                             <div className="mt-4">
@@ -41,13 +37,11 @@ export const Login = () => {
                                 </label>
                                 <input
                                     type="password"
-                                    name=""
-                                    id=""
+                                    name="password"
                                     placeholder="Enter Password"
                                     minLength={6}
                                     className="font-Montserrat w-full px-4 py-3 rounded-full mt-2 border focus:border-blue-500
           focus:bg-white focus:outline-none"
-                                    required=""
                                 />
                             </div>
                             <div className="text-right mt-2">
@@ -59,7 +53,6 @@ export const Login = () => {
                                 </a>
                             </div>
                             <button
-                                href="#"
                                 className="w-full mt-2 text-center text-black border-2 border-gradient-to-br border-gradient-to-br from-yellow-100 to-pink-400 hover:bg-gradient-to-bl hover:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-Montserrat font-semibold rounded-full text-sm px-5 py-2.5"
                             >
                                 Login

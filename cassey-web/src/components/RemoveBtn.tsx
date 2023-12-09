@@ -1,13 +1,35 @@
-import BASE_URL from '@/app/BaseURL';
 import { useState } from 'react';
+import Swal from 'sweetalert2';
 
-export const RemoveBtn = ({ handleRemove }) => {
+interface RemoveBtnProps {
+    handleRemove: () => Promise<void>;
+}
+
+export const RemoveBtn: React.FC<RemoveBtnProps> = ({ handleRemove }) => {
     const [loading, setLoading] = useState(false);
 
     const handleClick = async () => {
         setLoading(true);
-        await handleRemove();
-        setLoading(false);
+        try {
+            await handleRemove();
+            setLoading(false);
+            Swal.fire({
+                icon: 'success',
+                title: 'Item Removed',
+                showConfirmButton: false,
+                timer: 1500
+            }).then(() => {
+                window.location.reload();
+            });
+        } catch (error) {
+            setLoading(false);
+            console.error('Error removing item:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Failed to remove item',
+            });
+        }
     };
 
     return (

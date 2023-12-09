@@ -79,6 +79,7 @@ export async function POST(request: NextRequest) {
     }
   );
 }
+
 export async function DELETE(request: NextRequest) {
   const authorization = cookies(request.headers).get("Authorization");
 

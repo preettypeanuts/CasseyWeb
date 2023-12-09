@@ -1,15 +1,27 @@
 import { useEffect, useState } from "react";
 import { RemoveBtn } from "./RemoveBtn";
-import { WishListBtn } from "./WishListBtn";
 import Link from "next/link";
 import BASE_URL from "@/app/BaseURL";
 
-export const WishListCard = ({ wish, updateWishlist }) => {
+interface Wish {
+    _id: string;
+    thumbnail: string;
+    name: string;
+    excerpt: string;
+    price: number;
+}
+
+interface WishListCardProps {
+    wish: Wish;
+    updateWishlist: Wish[];
+}
+
+export const WishListCard: React.FC<WishListCardProps> = ({ wish, updateWishlist }) => {
     const [loading, setLoading] = useState(false);
-    const [wishlist, setWishlist] = useState([]); 
+    const [wishlist, setWishlist] = useState<Wish[]>([]);
 
     useEffect(() => {
-        setWishlist(updateWishlist); 
+        setWishlist(updateWishlist);
     }, [updateWishlist]);
 
     const handleRemove = async () => {
@@ -29,7 +41,7 @@ export const WishListCard = ({ wish, updateWishlist }) => {
             if (response.ok) {
                 console.log('Wishlist item removed!');
                 const updatedWishlist = wishlist.filter(item => item?._id !== wish?._id);
-                setWishlist(updatedWishlist); 
+                setWishlist(updatedWishlist);
             } else {
                 console.error('Failed to remove wishlist item');
             }
@@ -71,5 +83,5 @@ export const WishListCard = ({ wish, updateWishlist }) => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};

@@ -23,7 +23,7 @@ const config: Config = {
         },
       },
       animation: {
-        scroll: 'scroll 5s linear infinite',
+        scroll: 'scroll 20s linear infinite',
       },
       boxShadow: {
         customShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 25px 0px;',
