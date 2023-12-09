@@ -8,10 +8,6 @@ export const WishListCard = ({ wish, updateWishlist }) => {
     const [loading, setLoading] = useState(false);
     const [wishlist, setWishlist] = useState([]); 
 
-    console.log('====================================');
-    console.log(wish);
-    console.log('====================================');
-
     useEffect(() => {
         setWishlist(updateWishlist); 
     }, [updateWishlist]);

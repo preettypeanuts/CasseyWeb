@@ -32,7 +32,7 @@ export default function RegisterPage() {
 
         const result = (await response.json()) as Response;
 
-        console.log(result, 'resultnya');
+        // console.log(result, 'resultnya');
         
 
         if (!response.ok) {

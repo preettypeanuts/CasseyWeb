@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 import { decodeToken } from "./db/helpers/jwt";
 
 export async function middleware(request: NextRequest) {
-  console.log(request.url, "<< dari middleware");
+  // console.log(request.url, "<< dari middleware");
 
   if (request.url.includes("api/products")) {
     const authorization = cookies().get("Authorization");

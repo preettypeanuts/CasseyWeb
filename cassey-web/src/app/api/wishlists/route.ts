@@ -4,7 +4,6 @@ import {
   deleteWishList,
   getWishlists,
 } from "@/db/models/wishlists";
-import { log } from "console";
 import { ObjectId } from "mongodb";
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
