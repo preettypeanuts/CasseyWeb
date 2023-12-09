@@ -1,3 +1,5 @@
+"use server"
+
 import { ListProducts } from "@/components/ListProducts"
 import { Navbar } from "@/components/Navbar"
 import { SearchBar } from "@/components/SearchBar"
@@ -51,6 +53,8 @@ async function getProducts() {
 
     return data
 }
+
+
 
 export default async function Home() {
     const products = await getProducts()
