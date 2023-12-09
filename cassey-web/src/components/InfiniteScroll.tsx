@@ -1,3 +1,4 @@
+import Loading from '@/app/detail-product/loading';
 import { ReactNode } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
@@ -33,7 +34,7 @@ export const InfiniteScrollBar = ({
             dataLength={dataLength}
             next={fetchData}
             hasMore={hasMore}
-            loader={loader || <h4>Loading...</h4>}
+            loader={loader || <Loading/>}
             endMessage={endMessage || <p style={{ textAlign: 'center' }}>Yay! You have seen it all</p>}
             refreshFunction={refreshFunction}
             pullDownToRefresh={pullDownToRefresh}

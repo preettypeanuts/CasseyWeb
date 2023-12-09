@@ -1,9 +1,20 @@
 'use client'
 
-export const SearchBar = () => {
+import { useRouter, useSearchParams } from "next/navigation"
+import { useState } from "react"
+
+export const SearchBar = ({ onSearch }) => {
+
+    const [searchQuery, setSearchQuery] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        onSearch(searchQuery); // Pass the search query to the parent component
+    };
+
     return (
         <>
-            <form className="pl-[15vh] pr-[15vh]">
+            <form onSubmit={handleSubmit} className="pl-[15vh] pr-[15vh]">
                 <label
                     htmlFor="default-search"
                     className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -29,11 +40,13 @@ export const SearchBar = () => {
                         </svg>
                     </div>
                     <input
+                        value={searchQuery}
+                        onChange={(event) => setSearchQuery(event.target.value)}
                         type="search"
                         id="default-search"
                         className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-full  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Search Device, Model..."
-                        // required=""
+                    // required=""
                     />
                     <button
                         type="submit"

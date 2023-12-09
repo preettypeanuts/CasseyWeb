@@ -44,6 +44,14 @@ export const ListProducts = ({ products }: Props) => {
         }
     };
 
+    const handleSearch = (searchQuery) => {
+        // Filter products based on the search query
+        const filteredProducts = products.filter((product) =>
+            product.name.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+        setItems(filteredProducts);
+    };
+
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
 
@@ -58,7 +66,7 @@ export const ListProducts = ({ products }: Props) => {
                 <div className="pl-[15vh]">
                     <p className="flex text-[6vh] text-black font-black font-serif mt-20">All Products</p>
                 </div>
-                <SearchBar />
+                <SearchBar onSearch={handleSearch}/>
 
                 <InfiniteScrollBar
                     dataLength={items.length}
