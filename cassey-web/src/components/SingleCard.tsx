@@ -36,5 +36,5 @@ export const SingleCard = ({product}: Props) => {
                 </div>
             </div>
         </>
-    )
+    ) 
 }

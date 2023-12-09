@@ -17,7 +17,7 @@ export type ProductModel = {
 
 export type ProductSearch = {
   name: string;
-}
+};
 
 export const getProducts = async () => {
   const db = await getDb();
@@ -64,7 +64,7 @@ export const pagination = async (searchData?: string) => {
   if (searchData) {
     products = await db
       .collection("products")
-      .find({ name: { $regex: searchData, $options: 'i' } })
+      .find({ name: { $regex: searchData, $options: "i" } })
       .toArray();
   } else {
     products = await db
@@ -78,8 +78,6 @@ export const pagination = async (searchData?: string) => {
   return products;
 };
 
-
-
 // export const searchProduct = async (data: string) => {
 //   const db = await getDb();
 //   const searchData = await db
@@ -92,6 +90,12 @@ export const pagination = async (searchData?: string) => {
 //   return searchData;
 // };
 
-
-
-
+export const getFeaturedProducts = async () => {
+  const db = await getDb();
+  const products = (await db
+    .collection("products")
+    .find()
+    .limit(8)
+    .toArray()) as ProductModel[];
+  return products;
+};

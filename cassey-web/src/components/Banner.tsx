@@ -1,7 +1,7 @@
 import { RunningImage } from "./RunningImage"
 import { InfoEcommerce } from "./InfoEcommerce"
 
-export const Banner = () => {
+export const Banner = ({products}) => {
     return (
         <>
             <div className="w-screen h-screen justify-center align-middle flex">
@@ -29,7 +29,7 @@ export const Banner = () => {
                                         </a>
                                     </div>
                                 </div>
-                              <RunningImage/>
+                              <RunningImage products={products}/>
                             </div>
                         </div>
                         <InfoEcommerce />

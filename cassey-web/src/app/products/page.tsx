@@ -42,9 +42,6 @@ export interface DetailProductProps {
 async function getProducts() {
     const response = await fetch(`${BASE_URL}/api/products/`, {
         cache: "no-store",
-        headers: {
-            Cookie: cookies().toString()
-        }
     })
     const data = await response.json() as Product[]
 
