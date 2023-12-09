@@ -76,40 +76,40 @@ Implementasikan CSR dan SSR pada pada halaman-halaman dan komponen-komponen yang
 
 ### NEXT.js Route Handler
 
-- [ ] Install MongoDB database pada komputer kamu atau menggunakan MongoDB Atlas
+- [x] Install MongoDB database pada komputer kamu atau menggunakan MongoDB Atlas
 - [ ] Lakukan wiring dan validasi terhadap halaman-halaman dan komponen-komponen yang sudah dibuat.
-  - [ ] Halaman register: /register
-    - [ ] username:string (validation: required, unique)
-    - [ ] email:string  (validation: required, unique, email format)
-    - [ ] password:string  (validation: required, length min 5)
-  - [ ] Halaman login: /login
-    - [ ] email:string  (validation: required, email format)
-    - [ ] password:string  (validation: required)
-  - [ ] Halaman home: / (SSR)
+  - [x] Halaman register: /register
+    - [x] username:string (validation: required, unique)
+    - [x] email:string  (validation: required, unique, email format)
+    - [x] password:string  (validation: required, length min 5)
+  - [x] Halaman login: /login
+    - [x] email:string  (validation: required, email format)
+    - [x] password:string  (validation: required)
+  - [x] Halaman home: / (SSR)
     - [ ] Halaman product: /products
     - [ ] Fitur List Product
     - [ ] Fitur Search
     - [ ] Fitur Pagination
     - [ ] Untuk menerapakan infinite scroll salah satu package yang bisa digunakan: react-infinite-scroll
-  - [ ] Fitur Add to Wishlist
-    - [ ] userId: ObjectId  (validation: required)
-    - [ ] productId: ObjectId  (validation: required)
+  - [x] Fitur Add to Wishlist
+    - [x] userId: ObjectId  (validation: required)
+    - [x] productId: ObjectId  (validation: required)
   - [ ] Halaman detail product: /products/:slug
     - [ ] Fitur Add to Wishlist
       - [ ] userId: ObjectId  (validation: required)
       - [ ] productId: ObjectId  (validation: required)
-  - [ ] Halaman Wishlist
-    - [ ] Fitur List Wishlist
-    - [ ] Fitur Remove to Wishlist
-      - [ ] userId: ObjectId  (validation: required)
-      - [ ] productId: ObjectId  (validation: required)
+  - [x] Halaman Wishlist
+    - [x] Fitur List Wishlist
+    - [x] Fitur Remove to Wishlist
+      - [x] userId: ObjectId  (validation: required)
+      - [x] productId: ObjectId  (validation: required)
 
 ### NEXT.js Auth
 
 Implementasikan autentikasi pada aplikasi NEXT.js yang sudah dibuat dengan detail sebagai berikut:
 
-- [ ] Hanya user yang sudah login yang bisa menambahkan wishlist produk
-- [ ] Hanya user yang sudah login yang bisa menghapus wishlist produk
+- [x] Hanya user yang sudah login yang bisa menambahkan wishlist produk
+- [x] Hanya user yang sudah login yang bisa menghapus wishlist produk
 
 ## W2D4
 
