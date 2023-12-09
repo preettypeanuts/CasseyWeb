@@ -54,7 +54,28 @@ async function getProducts() {
     return data
 }
 
+// export async function generateMetadata(
+//     { params }: Props,
+//     parent: ResolvingMetadata
+// ): Promise<Metadata> {
+//     const { id } = params
+//     const response = await fetch(`${BASE_URL}/api/products/${id}/`, {
+//         cache: "no-store",
+//         headers: {
+//             Cookie: cookies().toString()
+//         }
+//     })
+//     const data = await response.json()
 
+//     const previousImages = (await parent).openGraph?.images || []
+
+//     return {
+//         title: data.title,
+//         openGraph: {
+//             //   images: ['/some-specific-page-image.jpg', ...previousImages],
+//         },
+//     }
+// }
 
 export default async function Home() {
     const products = await getProducts()
