@@ -1,6 +1,7 @@
 import BASE_URL from '../BaseURL'
 import { redirect } from "next/navigation"
 import { cookies } from 'next/headers'
+import ClientFlashComponent from '@/components/ClientFlash';
 
 export type Response<T = {}> = {
     data?: T;
@@ -56,13 +57,12 @@ export default function LoginPage() {
                         <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12 font-Montserrat">
                             Log in to your account
                         </h1>
-                        <form className="mt-6" action={handleLogin} method="POST">
+                        <ClientFlashComponent/>                        <form className="mt-6" action={handleLogin} method="POST">
                             <div>
                                 <label className="block text-gray-700 font-Montserrat">
                                     Email Address
                                 </label>
                                 <input
-                                    type="email"
                                     name="email"
                                     placeholder="Enter Email Address"
                                     autoComplete="email"
@@ -78,7 +78,6 @@ export default function LoginPage() {
                                     type="password"
                                     name="password"
                                     placeholder="Enter Password"
-                                    minLength={5}
                                     required
                                     className="font-Montserrat w-full px-4 py-3 rounded-full mt-2 border focus:border-blue-500
                                     focus:bg-white focus:outline-none"
